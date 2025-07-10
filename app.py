@@ -10,7 +10,7 @@ def home():
 @app.route("/weather")
 def get_weather():
     city = request.args.get("city", "New Delhi")
-    url = f"https://api.open-meteo.com/v1/forecast?latitude=28.6139&longitude=77.2088&current_weather=true"
+    url = f" "
     
     response = requests.get(url)
     if response.status_code == 200:
